@@ -1,37 +1,129 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
+    <title>Tarjeta Virtual</title>
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   </head>
   <body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs>
-      <!-- Marcador Hiro -->
+    <a-scene embedded arjs cursor="rayOrigin: mouse" raycaster="objects: .clickable">
       <a-marker preset="hiro">
-        
-        <!-- Texto de la tarjeta -->
-        <a-text value="Juan Anyelo Anchante Candia" color="#00FFAA" position="0 0.6 0" align="center" scale="1 1 1"></a-text>
-        <a-text value="Desarrollador AR/VR/MR" color="#FFFFFF" position="0 0.4 0" align="center" scale="0.8 0.8 0.8"></a-text>
-        
-        <!-- Redes sociales (puedes agregar más) -->
-        <a-box position="-0.5 0.1 0" width="0.3" height="0.1" depth="0.05" color="#1DA1F2">
-          <a-text value="Whatsapp" position="0 0 0.03" color="white" scale="0.5 0.5 0.5"></a-text>
+        <!-- Tarjeta como contenedor -->
+        <a-box position="0 3.5 -3" width="3.5" height="2" depth="0.05" color="#1a1a1a" material="opacity: 0.90" shadow>
+          <a-image src="firma.png" position="0 0 0.03" width="3.38" height="1.9"></a-image>
+            <a-text value="Developer\n AR / VR / MR"
+                    color="#FFFFFF"
+                    position="0.3 -0.8 0.03"
+                    align="center"
+                    width="3">
+            </a-text>
+          <!-- WhatsApp -->
+          <a-box position="-1.5 -0.8 0.03" width="0.1" height="0.1" depth="0.02" color="#25D366"
+                class="clickable" id="btn-whatsapp">
+            <a-image src="whatsapp.png" position="0 0 0.03" width="0.24" height="0.24"></a-image>
+          </a-box>
+          <!-- Texto que aparece al hacer click -->      
+          <a-text id="whatsapp-info" value="+34 622792954"
+                  color="#AAAAAA"
+                  position="-1.26 -0.54 0.03"
+                  align="center"
+                  scale="0.5 0.5 0.5"
+                  visible="false">
+          </a-text>
+          <!-- facebook -->
+          <a-box position="-1.2 -0.8 0.03" width="0.1" height="0.1" depth="0.02" color="#E1306C"
+                class="clickable" id="btn-facebook">
+            <a-image src="facebook.png" position="0 0 0.03" width="0.24" height="0.24"></a-image>
+          </a-box>
+          <!-- Texto que aparece al hacer click -->      
+          <a-text id="facebook-info" value="www.facebook.com/anyelo.anchantecandia/"
+                  color="#AAAAAA"
+                  position="-0.55 -0.54 0.03"
+                  align="center"
+                  scale="0.5 0.5 0.5"
+                  visible="false">
+          </a-text>
+          <!-- instagram -->
+          <a-box position="-0.9 -0.8 0.03" width="0.1" height="0.1" depth="0.02" color="#0077B5"
+                class="clickable" id="btn-instagram">
+            <a-image src="instagram.png" position="0 0 0.03" width="0.24" height="0.24"></a-image>
+          </a-box>
+          <!-- Texto que aparece al hacer click -->      
+          <a-text id="instagram-info" value="www.instagram.com/anyelosoft/"
+                  color="#AAAAAA"
+                  position="-0.82 -0.54 0.03"
+                  align="center"
+                  scale="0.5 0.5 0.5"
+                  visible="false">
+          </a-text>
+          <!-- linkedin -->
+          <a-box position="-0.6 -0.8 0.03" width="0.1" height="0.1" depth="0.02" color="#0077B5"
+                class="clickable" id="btn-linkedin">
+            <a-image src="linkedin.png" position="0 0 0.03" width="0.24" height="0.24"></a-image>
+          </a-box>
+          <!-- Texto que aparece al hacer click -->      
+          <a-text id="linkedin-info" value="www.linkedin.com/in/anyelius64/"
+                  color="#AAAAAA"
+                  position="-0.82 -0.54 0.03"
+                  align="center"
+                  scale="0.5 0.5 0.5"
+                  visible="false">
+          </a-text>
+          <!-- stack -->
+          <a-box position="1.25 -0.76 0.3" width="0.5" height="0.2" depth="0.05" color="#FFFFFF" opacity="0.2"
+                class="clickable" id="btn-stack">
+            <a-text value="stack" color="#AAAAAA" position="0 0 0" align="center" scale="0.6 0.6 0.6"></a-text>
+            <a-text value="stack" color="#AAAAAA" position="0.002 0 0" align="center" scale="0.6 0.6 0.6"></a-text>
+          </a-box>
         </a-box>
-
-        <a-box position="0 0.1 0" width="0.3" height="0.1" depth="0.05" color="#E1306C">
-          <a-text value="Instagram" position="0 0 0.03" color="white" scale="0.5 0.5 0.5"></a-text>
-        </a-box>
-
-        <a-box position="0.5 0.1 0" width="0.3" height="0.1" depth="0.05" color="#0077B5">
-          <a-text value="LinkedIn" position="0 0 0.03" color="white" scale="0.5 0.5 0.5"></a-text>
-        </a-box>
-
-        <!-- Correo electrónico -->
-        <a-text value="anyelius_64@hotmail.com" color="#AAAAAA" position="0 -0.2 0" align="center" scale="0.6 0.6 0.6"></a-text>
-
+        <!-- Cámara para navegación -->
       </a-marker>
+        <a-entity position="0 1.6 0">
+          <a-camera></a-camera>
+        </a-entity>
+      </a-scene>
+      <!-- Script para interacción -->
+    <script>
+      // Función para ocultar todos los textos
+      function ocultarTexto() {
+        document.querySelector('#whatsapp-info').setAttribute('visible','false');
+        document.querySelector('#facebook-info').setAttribute('visible','false');
+        document.querySelector('#instagram-info').setAttribute('visible','false');
+        document.querySelector('#linkedin-info').setAttribute('visible','false');
+      }
 
-      <a-entity camera></a-entity>
-    </a-scene>
+      // Función que alterna la visibilidad de los textos
+      function toggleText(textId) {
+        const textElement = document.querySelector(`#${textId}`);
+        const isVisible = textElement.getAttribute('visible') === 'true';
+
+        // Si el texto ya está visible, lo ocultamos
+        if (isVisible) {
+          textElement.setAttribute('visible', 'false');
+        } else {
+          // Si el texto no está visible, ocultamos todos los textos y mostramos el correspondiente
+          ocultarTexto();
+          textElement.setAttribute('visible', 'true');
+        }
+      }
+
+      // Añadir el evento de clic a cada botón
+      document.querySelector('#btn-whatsapp').addEventListener('click', () => {
+        toggleText('whatsapp-info');
+      });
+
+      document.querySelector('#btn-facebook').addEventListener('click', () => {
+        toggleText('facebook-info');
+      });
+
+      document.querySelector('#btn-instagram').addEventListener('click', () => {
+        toggleText('instagram-info');
+      });
+
+      document.querySelector('#btn-linkedin').addEventListener('click', () => {
+        toggleText('linkedin-info');
+      });
+    </script>
   </body>
 </html>
