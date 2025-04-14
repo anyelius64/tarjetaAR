@@ -7,81 +7,82 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   </head>
   <body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' cursor="rayOrigin: mouse" raycaster="objects: .clickable">
+    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
       <a-marker preset="hiro">
         <!-- Tarjeta como contenedor -->
         <a-box position="0 0 0" rotation="-30 0 0" width="2" height="1" depth="0.05" color="#000000" opacity="0" transparent="true">
           <!-- Firma -->
-          <a-image src="firma.png" position="0 0 0.051" width="1.9" height="0.9"></a-image>
+          <a-image src="/images/images_socialNetworks/icon_firma.png" position="0 0 0.051" width="1.9" height="0.9"></a-image>
           
           <!-- Botones y textos -->
           <a-entity id="botones">
             <!-- WhatsApp -->
-            <a-box position="-0.8 -0.4 0.06" width="0.15" height="0.15" depth="0.05" 
+            <a-box position="-0.8 -0.4 0.06" width="0.25" height="0.25" depth="0.01" 
                   color="#000000" opacity="0" transparent="true"
-                  class="clickable" id="btn-whatsapp">
-              <a-image src="whatsapp.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
+                  class="clickable" id="btn-whatsapp"
+                  clickeable-info="target: whatsapp-info">
+              <a-image src="/images/images_socialNetworks/icon_whatsapp.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
             </a-box>
             <!-- Texto que aparece al hacer click -->      
-            <a-text id="whatsapp-info" value="+34 622792954"
-                    color="#AAAAAA"
-                    position="-0.8 -0.6 0.06"
-                    align="center"
-                    scale="0.4 0.4 0.4"
-                    visible="false">
-            </a-text>
+            <a-image id="whatsapp-info" src="/images/images_socialNetworks/icon_WhatsappText.png" 
+              width="2" height="0.15"
+              position="-0.5 -0.57 0.03"
+              scale="0.4 0.4 0.4"
+              visible="false">
+            </a-image>
             <!-- facebook -->
-            <a-box position="-0.5 -0.4 0.06" width="0.15" height="0.15" depth="0.05" 
+            <a-box position="-0.5 -0.4 0.06" width="0.25" height="0.25" depth="0.01" 
                   color="#000000" opacity="0" transparent="true"
-                  class="clickable" id="btn-facebook">
-              <a-image src="facebook.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
+                  class="clickable" id="btn-facebook"
+                  clickeable-info="target: facebook-info">
+              <a-image src="/images/images_socialNetworks/icon_facebook.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
             </a-box>
             <!-- Texto que aparece al hacer click -->      
-            <a-text id="facebook-info" value="www.facebook.com/anyelo.anchantecandia/"
-                    color="#AAAAAA"
-                    position="-0.5 -0.6 0.06"
-                    align="center"
-                    scale="0.4 0.4 0.4"
-                    visible="false">
-            </a-text>
+            <a-image id="facebook-info" src="/images/images_socialNetworks/icon_facebookText.png" 
+              width="4.5" height="0.15"
+              position="0 -0.57 0.03"
+              scale="0.4 0.4 0.4"
+              visible="false">
+            </a-image>
             <!-- instagram -->
-            <a-box position="-0.2 -0.4 0.06" width="0.15" height="0.15" depth="0.05" 
+            <a-box position="-0.2 -0.4 0.06" width="0.25" height="0.25" depth="0.01" 
                   color="#000000" opacity="0" transparent="true"
-                  class="clickable" id="btn-instagram">
-              <a-image src="instagram.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
+                  class="clickable" id="btn-instagram"
+                  clickeable-info="target: instagram-info">
+              <a-image src="/images/images_socialNetworks/icon_instagram.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
             </a-box>
             <!-- Texto que aparece al hacer click -->      
-            <a-text id="instagram-info" value="www.instagram.com/anyelosoft/"
-                    color="#AAAAAA"
-                    position="-0.2 -0.6 0.06"
-                    align="center"
-                    scale="0.4 0.4 0.4"
-                    visible="false">
-            </a-text>
+            <a-image id="instagram-info" src="/images/images_socialNetworks/icon_instagramText.png" 
+              width="4" height="0.15"
+              position="-0.14 -0.57 0.03"
+              scale="0.4 0.4 0.4"
+              visible="false">
+            </a-image>
             <!-- linkedin -->
-            <a-box position="0.1 -0.4 0.06" width="0.15" height="0.15" depth="0.05" 
+            <a-box position="0.1 -0.4 0.06" width="0.25" height="0.25" depth="0.01" 
                   color="#000000" opacity="0" transparent="true"
-                  class="clickable" id="btn-linkedin">
-              <a-image src="linkedin.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
+                  class="clickable" id="btn-linkedin"
+                  clickeable-info="target: linkedin-info">
+              <a-image src="/images/images_socialNetworks/icon_linkedin.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
             </a-box>
             <!-- Texto que aparece al hacer click -->      
-            <a-text id="linkedin-info" value="www.linkedin.com/in/anyelius64/"
-                    color="#AAAAAA"
-                    position="0.1 -0.6 0.06"
-                    align="center"
-                    scale="0.4 0.4 0.4"
-                    visible="false">
-            </a-text>
+            <a-image id="linkedin-info" src="/images/images_socialNetworks/icon_linkendinText.png" 
+              width="4" height="0.15"
+              position="-0.14 -0.57 0.03"
+              scale="0.4 0.4 0.4"
+              visible="false">
+            </a-image>
             <!-- skills -->
-            <a-box position="0.8 -0.39 0.06" width="0.3" height="0.3" depth="0.05" 
+            <a-box position="0.8 -0.39 0.06" width="0.25" height="0.25" depth="0.01" 
                   color="#000000" opacity="0" transparent="true"
-                  class="clickable" id="btn-linkedin">
-              <a-image src="skill (1).png" position="0 0 0.03" width="0.28" height="0.28"></a-image>
+                  class="clickable" id="btn-skills"
+                  clickeable-info="target: skills-info">
+              <a-image src="/images/images_socialNetworks/icon_skill (1).png" position="0 0 0.03" width="0.28" height="0.28"></a-image>
             </a-box>
             <!-- Texto que aparece al hacer click -->      
-            <a-text id="linkedin-info" value="www.linkedin.com/in/anyelius64/"
-                    color="#AAAAAA"
-                    position="0.1 -0.6 0.06"
+            <a-text id="skills-info" value="Habilidades"
+                    color="#FFFFFF"
+                    position="0.8 -0.2 0.06"
                     align="center"
                     scale="0.4 0.4 0.4"
                     visible="false">
@@ -90,35 +91,40 @@
         </a-box>
       </a-marker>
         <!-- Cámara para navegación -->
-        <a-entity camera></a-entity>
-      </a-scene>
+        <a-entity camera>
+         <!-- <a-cursor
+            fuse="false"
+            rayOrigin="cursor"
+            raycaster="objects: .clickable; interval: 50"
+            material="opacity: 0; transparent: true">
+          </a-cursor> -->
+          <a-cursor
+            fuse="false"
+            rayOrigin="cursor"
+            raycaster="objects: .clickable; interval: 50"
+            material="color: red; opacity: 1;"
+            geometry="primitive: ring; radiusInner: 0.062; radiusOuter: 0.065">
+          </a-cursor>
+        </a-entity>
+    </a-scene>
       <!-- Script para interacción -->
    
    
-      <script>
-        function ocultarTexto() {
-          ['whatsapp-info', 'facebook-info', 'instagram-info', 'linkedin-info'].forEach(id => {
-            document.querySelector(`#${id}`).setAttribute('visible', 'false');
+    <script>
+      AFRAME.registerComponent('clickeable-info', {
+        schema: { target: { type: 'string' } },
+        init: function () {
+          this.el.addEventListener('click', () => {
+            ['whatsapp-info', 'facebook-info', 'instagram-info', 'linkedin-info', 'skills-info'].forEach(id => {
+              const textEl = document.querySelector(`#${id}`);
+              if (textEl) textEl.setAttribute('visible', 'false');
+            });
+            const targetId = this.data.target;
+            const targetEl = document.querySelector(`#${targetId}`);
+            if (targetEl) targetEl.setAttribute('visible', 'true');
           });
         }
-  
-        function toggleText(textId) {
-          const el = document.querySelector(`#${textId}`);
-          const isVisible = el.getAttribute('visible') === 'true';
-          ocultarTexto();
-          if (!isVisible) el.setAttribute('visible', 'true');
-        }
-  
-        function addEventHandlers(id, textId) {
-          const element = document.querySelector(id);
-          element.addEventListener('click', () => toggleText(textId));
-          element.addEventListener('touchstart', () => toggleText(textId));
-        }
-  
-        addEventHandlers('#btn-whatsapp', 'whatsapp-info');
-        addEventHandlers('#btn-facebook', 'facebook-info');
-        addEventHandlers('#btn-instagram', 'instagram-info');
-        addEventHandlers('#btn-linkedin', 'linkedin-info');
-      </script>
+      });
+    </script>
   </body>
 </html>
