@@ -8,9 +8,6 @@
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
-      <a-light type="ambient" color="#FFFFFF" intensity="1"></a-light>
-      <a-light type="directional" color="#FFFFFF" intensity="0.6" position="0 2 1"></a-light>
-
       <a-marker preset="hiro">
         <!-- Tarjeta como contenedor -->
         <a-box position="0 0 0" rotation="-30 0 0" width="2" height="1" depth="0.05" color="#000000" opacity="0" transparent="true">
@@ -24,10 +21,10 @@
                   color="#000000" opacity="0" transparent="true"
                   class="clickable" id="btn-whatsapp"
                   clickeable-info="target: whatsapp-info">
-              <a-image src="/images/images_socialNetworks/icon_whatsapp.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
+              <a-image src="icon_whatsapp.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
             </a-box>
             <!-- Texto que aparece al hacer click -->      
-            <a-image id="whatsapp-info" src="/images/images_socialNetworks/icon_WhatsappText.png" 
+            <a-image id="whatsapp-info" src="icon_WhatsappText.png" 
               width="2" height="0.15"
               position="-0.5 -0.57 0.03"
               scale="0.4 0.4 0.4"
@@ -38,10 +35,10 @@
                   color="#000000" opacity="0" transparent="true"
                   class="clickable" id="btn-facebook"
                   clickeable-info="target: facebook-info">
-              <a-image src="images/images_socialNetworks/icon_facebook.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
+              <a-image src="icon_facebook.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
             </a-box>
             <!-- Texto que aparece al hacer click -->      
-            <a-image id="facebook-info" src="/images/images_socialNetworks/icon_facebookText.png" 
+            <a-image id="facebook-info" src="icon_facebookText.png" 
               width="4.5" height="0.15"
               position="0 -0.57 0.03"
               scale="0.4 0.4 0.4"
@@ -52,10 +49,10 @@
                   color="#000000" opacity="0" transparent="true"
                   class="clickable" id="btn-instagram"
                   clickeable-info="target: instagram-info">
-              <a-image src="/images/images_socialNetworks/icon_instagram.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
+              <a-image src="icon_instagram.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
             </a-box>
             <!-- Texto que aparece al hacer click -->      
-            <a-image id="instagram-info" src="/images/images_socialNetworks/icon_instagramText.png" 
+            <a-image id="instagram-info" src="icon_instagramText.png" 
               width="4" height="0.15"
               position="-0.14 -0.57 0.03"
               scale="0.4 0.4 0.4"
@@ -66,10 +63,10 @@
                   color="#000000" opacity="0" transparent="true"
                   class="clickable" id="btn-linkedin"
                   clickeable-info="target: linkedin-info">
-              <a-image src="/images/images_socialNetworks/icon_linkedin.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
+              <a-image src="icon_linkedin.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
             </a-box>
             <!-- Texto que aparece al hacer click -->      
-            <a-image id="linkedin-info" src="/images/images_socialNetworks/icon_linkendinText.png" 
+            <a-image id="linkedin-info" src="icon_linkendinText.png" 
               width="4" height="0.15"
               position="-0.14 -0.57 0.03"
               scale="0.4 0.4 0.4"
@@ -80,7 +77,7 @@
                   color="#000000" opacity="0" transparent="true"
                   class="clickable" id="btn-skills"
                   clickeable-info="target: skills-info">
-              <a-image src="/images/images_socialNetworks/icon_skill (1).png" position="0 0 0.03" width="0.28" height="0.28"></a-image>
+              <a-image src="icon_skill (1).png" position="0 0 0.03" width="0.28" height="0.28"></a-image>
             </a-box>
             <!-- Texto que aparece al hacer click -->      
             <a-text id="skills-info" value="Habilidades"
