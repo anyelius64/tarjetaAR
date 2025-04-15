@@ -76,28 +76,69 @@
             <a-box position="0.8 -0.39 0.06" width="0.25" height="0.25" depth="0.01" 
                   color="#000000" opacity="0" transparent="true"
                   class="clickable" id="btn-skills"
-                  clickeable-info="target: skills-info">
+                  clickeable-info="target: skills-info-group">
               <a-image src="icon_skill (1).png" position="0 0 0.03" width="0.28" height="0.28"></a-image>
             </a-box>
-            <!-- Texto que aparece al hacer click -->      
-            <a-text id="skills-info" value="Habilidades"
-                    color="#FFFFFF"
-                    position="0.8 -0.2 0.06"
-                    align="center"
-                    scale="0.4 0.4 0.4"
-                    visible="false">
-            </a-text>
+            <!-- grupo de skills Title -->      
+            <a-entity id="skills-info-group" visible="false">
+              <a-image id="skills-design" src="icon_design.png" width="1.13" height="0.15" position="1.2 0.2 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: design-detail" visible="false"></a-image>
+              <a-image id="skills-backend" src="icon_backend.png" width="1.4" height="0.15" position="1.26 0.1 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: backend-detail" visible="false"></a-image>
+              <a-image id="skills-frontend" src="icon_frontend.png" width="1.4" height="0.15" position="1.26 0 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: frontend-detail" visible="false"></a-image>
+              <a-image id="skills-database" src="icon_database.png" width="1.45" height="0.15" position="1.27 -0.1 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: database-detail" visible="false"></a-image>
+              <a-image id="skills-managment" src="icon_managment.png" width="1.67" height="0.15" position="1.32 -0.2 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: managment-detail" visible="false"></a-image>
+              <a-image id="skills-dataAnalytics" src="icon_dataAnalitics.png" width="2" height="0.15" position="1.38 -0.3 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: dataAnalytics-detail" visible="false"></a-image>
+              <a-image id="skills-virtualReality" src="icon_virtualReality.png" width="2.1" height="0.15" position="1.4 -0.4 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: virtualReality-detail" visible="false"></a-image>
+            </a-entity>
+            <!-- grupo de skills subTitle design--> 
+            <a-entity id="design-group" visible="false">
+              <a-image src="images_figma.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_bizagi.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_rationalRose.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+            </a-entity>
+            <!-- grupo de skills subTitle backend-->
+            <a-entity id="backend-group" visible="false">
+              <a-image src="images_c++.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_java.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_python.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_javaScript.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+            </a-entity>
+            <!-- grupo de skills subTitle frontend-->
+            <a-entity id="frontend-group" visible="false">
+              <a-image src="images_css.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_html.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_figma.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_flutter.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+            </a-entity>
+            <!-- grupo de skills subTitle database-->
+            <a-entity id="database-group" visible="false">
+              <a-image src="images_mysql.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_mongodb.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_sqlServer.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_phpMyadmin.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+            </a-entity>
+            <!-- grupo de skills subTitle managment-->
+            <a-entity id="managment-group" visible="false">
+              <a-image src="images_git.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_jira.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_github.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_testLink.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+            </a-entity>
+            <!-- grupo de skills subTitle dataAnalytics-->
+            <a-entity id="dataAnalytics-group" visible="false">
+              <a-image src="images_pandas.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_powerby.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_webScraping.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+            </a-entity>
+            <!-- grupo de skills subTitle virtualReality-->
+            <a-entity id="virtualReality-group" visible="false">
+              <a-image src="images_aFrame.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+              <a-image src="images_unity.png" position="-0.8 -0.75 0.03" width="1.5" height="0.15"></a-image>
+            </a-entity>
           </a-entity>
         </a-box>
       </a-marker>
         <!-- Cámara para navegación -->
         <a-entity camera>
-         <!-- <a-cursor
-            fuse="false"
-            rayOrigin="cursor"
-            raycaster="objects: .clickable; interval: 50"
-            material="opacity: 0; transparent: true">
-          </a-cursor> -->
           <a-cursor
             fuse="false"
             rayOrigin="cursor"
@@ -107,24 +148,75 @@
           </a-cursor>
         </a-entity>
     </a-scene>
-      <!-- Script para interacción -->
-   
-   
+    
     <script>
       AFRAME.registerComponent('clickeable-info', {
         schema: { target: { type: 'string' } },
         init: function () {
           this.el.addEventListener('click', () => {
-            ['whatsapp-info', 'facebook-info', 'instagram-info', 'linkedin-info', 'skills-info'].forEach(id => {
-              const textEl = document.querySelector(`#${id}`);
-              if (textEl) textEl.setAttribute('visible', 'false');
+            // Oculta todos los textos sociales
+            const socialInfo = [
+              'whatsapp-info', 'facebook-info', 'instagram-info', 'linkedin-info'
+            ];
+            socialInfo.forEach(id => {
+              const el = document.querySelector(`#${id}`);
+              if (el) el.setAttribute('visible', false);
             });
-            const targetId = this.data.target;
-            const targetEl = document.querySelector(`#${targetId}`);
-            if (targetEl) targetEl.setAttribute('visible', 'true');
+
+            // Oculta todos los skills principales
+            const skillTitles = [
+              'skills-design', 'skills-backend', 'skills-frontend', 
+              'skills-database', 'skills-managment', 'skills-dataAnalytics', 'skills-virtualReality'
+            ];
+            skillTitles.forEach(id => {
+              const el = document.querySelector(`#${id}`);
+              if (el) el.setAttribute('visible', false);
+            });
+
+            // Oculta todos los skills detalle
+            const skillGroups = [
+              'design-group', 'backend-group', 'frontend-group',
+              'database-group', 'managment-group', 'dataAnalytics-group', 'virtualReality-group'
+            ];
+            skillGroups.forEach(id => {
+              const group = document.querySelector(`#${id}`);
+              if (group) group.setAttribute('visible', false);
+            });
+
+            // Mostrar grupo de skills si aplica
+            if (this.data.target === 'skills-info-group') {
+              skillTitles.forEach(id => {
+                const el = document.querySelector(`#${id}`);
+                if (el) el.setAttribute('visible', true);
+              });
+            }
+
+            // Muestra el target deseado
+            const target = document.querySelector(`#${this.data.target}`);
+            if (target) target.setAttribute('visible', true);
           });
         }
       });
+
+      AFRAME.registerComponent('clickeable-skill', {
+        schema: { target: { type: 'string' } },
+        init: function () {
+          this.el.addEventListener('click', () => {
+            const skillGroups = [
+              'design-group', 'backend-group', 'frontend-group',
+              'database-group', 'managment-group', 'dataAnalytics-group', 'virtualReality-group'
+            ];
+            skillGroups.forEach(id => {
+              const group = document.querySelector(`#${id}`);
+              if (group) group.setAttribute('visible', false);
+            });
+
+            const target = document.querySelector(`#${this.data.target}`);
+            if (target) target.setAttribute('visible', true);
+          });
+        }
+      });
+
     </script>
   </body>
 </html>
