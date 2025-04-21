@@ -156,6 +156,9 @@
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
       <a-sound src="url(Lyrics.mp3)" autoplay="true" position="0 1.6 -3"></a-sound>
       <a-marker preset="hiro">
+
+        <a-entity gltf-model="scene.gltf" animation-mixer="loop: repeat;" position="0.8 -1 0" scale="0.2 0.2 0.2"></a-entity>
+        
         <!-- Tarjeta como contenedor -->
         <a-box position="0 0 0" rotation="-30 0 0" width="2" height="1" depth="0.05" color="#000000" opacity="0" transparent="true" drag-move="axis: x-y">
           <!-- Firma -->
