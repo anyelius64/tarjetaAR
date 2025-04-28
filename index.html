@@ -154,19 +154,19 @@
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
-      <a-sound src="anyelo_music4.mp3" autoplay="true" position="0 1.6 -3"></a-sound>
+      <a-sound src="music/anyelo_music4.mp3" autoplay="true" position="0 1.6 -3"></a-sound>
       
       <!--<a-marker preset="hiro">-->
       <a-marker type="pattern" url="pattern-image.patt">  
         
-        <a-entity gltf-model="conejo_duracell_bailandi.glb" animation-mixer="clip: *; loop: repeat; timeScale: 1.5" position="0.9 -1.3 0" scale="8 8 8" rotation="-30 0 0"></a-entity>
-        <a-entity gltf-model="hombre_de_jenjibre_bailando.glb" animation-mixer="clip: *; loop: repeat; timeScale: 1" position="0 -1.3 0" scale="60 60 60" rotation="-30 0 0"></a-entity>
-        <a-entity gltf-model="spiderman_bailndo.glb" animation-mixer="clip: *; loop: repeat; timeScale: 1" position="-0.9 -1.3 0" scale="0.16 0.16 0.16" rotation="-30 0 0"></a-entity>
+        <a-entity gltf-model="3D/conejo_duracell_bailandi.glb" animation-mixer="clip: *; loop: repeat; timeScale: 1.5" position="0.9 -1.3 0" scale="8 8 8" rotation="-30 0 0"></a-entity>
+        <a-entity gltf-model="3D/hombre_de_jenjibre_bailando.glb" animation-mixer="clip: *; loop: repeat; timeScale: 1" position="0 -1.3 0" scale="60 60 60" rotation="-30 0 0"></a-entity>
+        <a-entity gltf-model="3D/spiderman_bailndo.glb" animation-mixer="clip: *; loop: repeat; timeScale: 1.5" position="-0.9 -1.3   0" scale="0.16 0.16 0.16" rotation="-30 0 0"></a-entity>
         
         <!-- Tarjeta como contenedor -->
         <a-box position="0 0 0" rotation="-30 0 0" width="2" height="1" depth="0.05" color="#000000" opacity="0" transparent="true" drag-move="axis: x-y">
           <!-- Firma -->
-          <a-image src="icon_firma.png" position="0 0 0" width="1.9" height="0.9"></a-image>
+          <a-image src="images/icon_firma.png" position="0 0 0" width="1.9" height="0.9"></a-image>
           
           <!-- Botones y textos -->
           <a-entity id="botones">
@@ -175,10 +175,10 @@
                   color="#000000" opacity="0" transparent="true"
                   class="clickable" id="btn-whatsapp"
                   clickeable-info="target: whatsapp-info">
-              <a-image src="icon_whatsapp.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
+              <a-image src="images/icon_whatsapp.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
             </a-box>
             <!-- Texto que aparece al hacer click -->      
-            <a-image id="whatsapp-info" src="icon_WhatsappText.png" 
+            <a-image id="whatsapp-info" src="images/icon_WhatsappText.png" 
               width="3" height="0.2"
               position="-0.35 -0.57 0.03"
               scale="0.4 0.4 0.4"
@@ -189,10 +189,10 @@
                   color="#000000" opacity="0" transparent="true"
                   class="clickable" id="btn-facebook"
                   clickeable-info="target: facebook-info">
-              <a-image src="icon_facebook.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
+              <a-image src="images/icon_facebook.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
             </a-box>
             <!-- Texto que aparece al hacer click -->      
-            <a-image id="facebook-info" src="icon_facebookText.png" 
+            <a-image id="facebook-info" src="images/icon_facebookText.png" 
               width="5" height="0.2"
               position="0 -0.57 0.03"
               scale="0.4 0.4 0.4"
@@ -203,10 +203,10 @@
                   color="#000000" opacity="0" transparent="true"
                   class="clickable" id="btn-instagram"
                   clickeable-info="target: instagram-info">
-              <a-image src="icon_instagram.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
+              <a-image src="images/icon_instagram.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
             </a-box>
             <!-- Texto que aparece al hacer click -->      
-            <a-image id="instagram-info" src="icon_instagramText.png" 
+            <a-image id="instagram-info" src="images/icon_instagramText.png" 
               width="5" height="0.18"
               position="0 -0.57 0.03"
               scale="0.4 0.4 0.4"
@@ -217,10 +217,10 @@
                   color="#000000" opacity="0" transparent="true"
                   class="clickable" id="btn-linkedin"
                   clickeable-info="target: linkedin-info">
-              <a-image src="icon_linkedin.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
+              <a-image src="images/icon_linkedin.png" position="0 0 0.03" width="0.2" height="0.2"></a-image>
             </a-box>
             <!-- Texto que aparece al hacer click -->      
-            <a-image id="linkedin-info" src="icon_linkendinText.png" 
+            <a-image id="linkedin-info" src="images/icon_linkendinText.png" 
               width="5" height="0.18"
               position="0 -0.57 0.03"
               scale="0.4 0.4 0.4"
@@ -231,61 +231,61 @@
                   color="#000000" opacity="0" transparent="true"
                   class="clickable" id="btn-skills"
                   clickeable-info="target: skills-info-group">
-              <a-image src="icon_skill (1).png" position="0 0 0.03" width="0.28" height="0.28"></a-image>
+              <a-image src="images/icon_skill (1).png" position="0 0 0.03" width="0.28" height="0.28"></a-image>
             </a-box>
             <!-- grupo de skills Title -->      
             <a-entity id="skills-info-group" visible="false">
-              <a-image id="skills-design" class="clickable" src="icon_design.png" width="1.14" height="0.17" position="0.6 0.75 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: design-group" visible="false"></a-image>
-              <a-image id="skills-backend" class="clickable" src="icon_backend.png" width="1.39" height="0.17" position="-0.66 0.5 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: backend-group" visible="false"></a-image>
-              <a-image id="skills-frontend" class="clickable" src="icon_frontend.png" width="1.39" height="0.17" position="0 0.5 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: frontend-group" visible="false"></a-image>
-              <a-image id="skills-database" class="clickable" src="icon_database.png" width="1.46" height="0.17" position="0.65 0.5 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: database-group" visible="false"></a-image>
-              <a-image id="skills-managment" class="clickable" src="icon_managment.png" width="1.68" height="0.17" position="-0.5 0.75 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: managment-group" visible="false"></a-image>
-              <a-image id="skills-dataAnalytics" class="clickable" src="icon_dataAnalitics.png" width="2.01" height="0.175" position="0.5 0.62 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: dataAnalytics-group" visible="false"></a-image>
-              <a-image id="skills-virtualReality" class="clickable" src="icon_virtualReality.png" width="2.11" height="0.175" position="-0.5 0.62 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: virtualReality-group" visible="false"></a-image>
+              <a-image id="skills-design" class="clickable" src="images/icon_design.png" width="1.14" height="0.17" position="0.6 0.75 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: design-group" visible="false"></a-image>
+              <a-image id="skills-backend" class="clickable" src="images/icon_backend.png" width="1.39" height="0.17" position="-0.66 0.5 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: backend-group" visible="false"></a-image>
+              <a-image id="skills-frontend" class="clickable" src="images/icon_frontend.png" width="1.39" height="0.17" position="0 0.5 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: frontend-group" visible="false"></a-image>
+              <a-image id="skills-database" class="clickable" src="images/icon_database.png" width="1.46" height="0.17" position="0.65 0.5 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: database-group" visible="false"></a-image>
+              <a-image id="skills-managment" class="clickable" src="images/icon_managment.png" width="1.68" height="0.17" position="-0.5 0.75 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: managment-group" visible="false"></a-image>
+              <a-image id="skills-dataAnalytics" class="clickable" src="images/icon_dataAnalitics.png" width="2.01" height="0.175" position="0.5 0.62 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: dataAnalytics-group" visible="false"></a-image>
+              <a-image id="skills-virtualReality" class="clickable" src="images/icon_virtualReality.png" width="2.11" height="0.175" position="-0.5 0.62 0.03" scale="0.4 0.4 0.4" clickeable-skill="target: virtualReality-group" visible="false"></a-image>
             </a-entity>
             <!-- grupo de skills subTitle design--> 
             <a-entity id="design-group" visible="false">  
-              <a-image src="images_figma.png" position="-0.9 -0.6 0.03" width="0.26" height="0.1"></a-image>
-              <a-image src="images_bizagi.png" position="-0.6 -0.6 0.03" width="0.31" height="0.1"></a-image>
-              <a-image src="images_rationalRose.png" position="-0.15 -0.6 0.03" width="0.54" height="0.1"></a-image>
+              <a-image src="images/images_figma.png" position="-0.9 -0.6 0.03" width="0.26" height="0.1"></a-image>
+              <a-image src="images/images_bizagi.png" position="-0.6 -0.6 0.03" width="0.31" height="0.1"></a-image>
+              <a-image src="images/images_rationalRose.png" position="-0.15 -0.6 0.03" width="0.54" height="0.1"></a-image>
             </a-entity>
             <!-- grupo de skills subTitle backend-->
             <a-entity id="backend-group" visible="false">
-              <a-image src="images_c++.png" position="-0.9 -0.6 0.03" width="0.26" height="0.1"></a-image>
-              <a-image src="images_java.png" position="-0.6 -0.6 0.03" width="0.29" height="0.1"></a-image>
-              <a-image src="images_python.png" position="-0.25 -0.6 0.03" width="0.34" height="0.1"></a-image>
+              <a-image src="images/images_c++.png" position="-0.9 -0.6 0.03" width="0.26" height="0.1"></a-image>
+              <a-image src="images/images_java.png" position="-0.6 -0.6 0.03" width="0.29" height="0.1"></a-image>
+              <a-image src="images/images_python.png" position="-0.25 -0.6 0.03" width="0.34" height="0.1"></a-image>
             </a-entity>
             <!-- grupo de skills subTitle frontend-->
             <a-entity id="frontend-group" visible="false">
-              <a-image src="images_css.png" position="-0.9 -0.6 0.03" width="0.24" height="0.1"></a-image>
-              <a-image src="images_html.png" position="-0.63 -0.6 0.03" width="0.27" height="0.1"></a-image>
-              <a-image src="images_flutter.png" position="-0.3 -0.6 0.03" width="0.34" height="0.1"></a-image>
+              <a-image src="images/images_css.png" position="-0.9 -0.6 0.03" width="0.24" height="0.1"></a-image>
+              <a-image src="images/images_html.png" position="-0.63 -0.6 0.03" width="0.27" height="0.1"></a-image>
+              <a-image src="images/images_flutter.png" position="-0.3 -0.6 0.03" width="0.34" height="0.1"></a-image>
               <a-image src="images_javaScript.png" position="0.17 -0.6 0.03" width="0.54" height="0.1"></a-image>
             </a-entity>
             <!-- grupo de skills subTitle database-->
             <a-entity id="database-group" visible="false">
-              <a-image src="images_mysql.png" position="-0.9 -0.6 0.03" width="0.27" height="0.1"></a-image>
-              <a-image src="images_mongodb.png" position="-0.6 -0.6 0.03" width="0.35" height="0.1"></a-image>
-              <a-image src="images_sqlServer.png" position="-0.18 -0.6 0.03" width="0.46" height="0.1"></a-image>
-              <a-image src="images_phpMyadmin.png" position="0.26 -0.6 0.03" width="0.47" height="0.1"></a-image>
+              <a-image src="images/images_mysql.png" position="-0.9 -0.6 0.03" width="0.27" height="0.1"></a-image>
+              <a-image src="images/images_mongodb.png" position="-0.6 -0.6 0.03" width="0.35" height="0.1"></a-image>
+              <a-image src="images/images_sqlServer.png" position="-0.18 -0.6 0.03" width="0.46" height="0.1"></a-image>
+              <a-image src="images/images_phpMyadmin.png" position="0.26 -0.6 0.03" width="0.47" height="0.1"></a-image>
             </a-entity>
             <!-- grupo de skills subTitle managment-->
             <a-entity id="managment-group" visible="false">
-              <a-image src="images_git.png" position="-0.9 -0.6 0.03" width="0.24" height="0.1"></a-image>
-              <a-image src="images_jira.png" position="-0.6 -0.6 0.03" width="0.32" height="0.1"></a-image>
-              <a-image src="images_github.png" position="-0.22 -0.6 0.03" width="0.41" height="0.1"></a-image>
-              <a-image src="images_testLink.png" position="0.28 -0.6 0.03" width="0.57" height="0.09"></a-image>
+              <a-image src="images/images_git.png" position="-0.9 -0.6 0.03" width="0.24" height="0.1"></a-image>
+              <a-image src="images/images_jira.png" position="-0.6 -0.6 0.03" width="0.32" height="0.1"></a-image>
+              <a-image src="images/images_github.png" position="-0.22 -0.6 0.03" width="0.41" height="0.1"></a-image>
+              <a-image src="images/images_testLink.png" position="0.28 -0.6 0.03" width="0.57" height="0.09"></a-image>
             </a-entity>
             <!-- grupo de skills subTitle dataAnalytics-->
             <a-entity id="dataAnalytics-group" visible="false">
-              <a-image src="images_pandas.png" position="-0.88 -0.6 0.03" width="0.34" height="0.1"></a-image>
-              <a-image src="images_powerby.png" position="-0.48 -0.6 0.03" width="0.41" height="0.1"></a-image>
-              <a-image src="images_webScraping.png" position="-0.08 -0.6 0.03" width="0.47" height="0.1"></a-image>
+              <a-image src="images/images_pandas.png" position="-0.88 -0.6 0.03" width="0.34" height="0.1"></a-image>
+              <a-image src="images/images_powerby.png" position="-0.48 -0.6 0.03" width="0.41" height="0.1"></a-image>
+              <a-image src="images/images_webScraping.png" position="-0.08 -0.6 0.03" width="0.47" height="0.1"></a-image>
             </a-entity>
             <!-- grupo de skills subTitle virtualReality-->
             <a-entity id="virtualReality-group" visible="false">
-              <a-image src="images_aFrame.png" position="-0.8 -0.6 0.03" width="0.4" height="0.1"></a-image>
-              <a-image src="images_unity.png" position="-0.42 -0.6 0.03" width="0.33" height="0.1"></a-image>
+              <a-image src="images/images_aFrame.png" position="-0.8 -0.6 0.03" width="0.4" height="0.1"></a-image>
+              <a-image src="images/images_unity.png" position="-0.42 -0.6 0.03" width="0.33" height="0.1"></a-image>
             </a-entity>
           </a-entity>
         </a-box>
